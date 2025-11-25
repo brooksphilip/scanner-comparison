@@ -174,32 +174,6 @@ for cataloger := range catalogers {
 return findVulnerabilities(packages)
 ```
 
-## Recommendation for Your Harbor Setup
-
-```yaml
-# Harbor scanner configuration
-scanners:
-  - name: trivy
-    enabled: true
-    use_for:
-      - Standard images (SUSE, RHEL, Ubuntu)
-      - Quick CI/CD feedback
-    
-  - name: grype  
-    enabled: true
-    use_for:
-      - Chainguard proxy cache
-      - Hardened images
-      - Unknown sources
-      - Compliance verification
-
-# Policy: Require BOTH to pass for production
-policy:
-  production:
-    - trivy: no HIGH/CRITICAL
-    - grype: no CRITICAL
-```
-
 ## Bottom Line
 
 **Trivy without package DB:** Reports 0 vulnerabilities ❌
