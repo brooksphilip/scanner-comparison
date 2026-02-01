@@ -16,8 +16,19 @@ Lets build the image without the Package DB
 ```bash
 docker build -t trivy-withoutdb -f Dockerfile-without-db .
 ```
+Now lets scan the image with a DB 
+```bash
+trivy image trivy-withdb
+```
 
-## Your Trivy Results
+Now lets scan the image without a DB
+```bash
+trivy image trivy-withoutdb
+```
+
+
+
+## Your Trivy Results (roughly)
 
 ### WITHOUT Package Database
 ```
