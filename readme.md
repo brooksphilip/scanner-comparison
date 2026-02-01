@@ -1,5 +1,10 @@
 # Why Trivy Shows Different Results (And Why It's Actually Worse)
 
+## Dependencies
+- **Docker**: Container runtime ([Install Docker](https://docs.docker.com/get-docker/))
+- **Grype**: Binary Level Container Scanner ([Grype Github](https://github.com/anchore/grype))
+- **Trivy**: Package Level Container Scanner ([Trivy Getting Started](https://trivy.dev/docs/latest/getting-started/))
+
 ## Your Trivy Results
 
 ### WITHOUT Package Database
