@@ -5,6 +5,18 @@
 - **Grype**: Binary Level Container Scanner ([Grype Github](https://github.com/anchore/grype))
 - **Trivy**: Package Level Container Scanner ([Trivy Getting Started](https://trivy.dev/docs/latest/getting-started/))
 
+## Getting Started 
+
+Lets build the image with a Package DB
+```bash
+docker build -t trivy-withdb -f Dockerfile-with-db .
+```
+
+Lets build the image without the Package DB
+```bash
+docker build -t trivy-withoutdb -f Dockerfile-without-db .
+```
+
 ## Your Trivy Results
 
 ### WITHOUT Package Database
